@@ -1,1 +1,1 @@
-# Rebecca Nakamura React Portfolio Application
+# RN React Portfolio Application
