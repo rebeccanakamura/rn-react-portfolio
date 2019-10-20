@@ -40,7 +40,8 @@ export default class PortfolioForm extends Component {
   deleteImage(imageType) {
     axios
       .delete(
-        `https://api.devcamp.space/portfolio/delete-portfolio-image/${this.state.id}?image_type=${imageType}`,
+        `https://api.devcamp.space/portfolio/delete-portfolio-image/${this.state
+        .id}?image_type=${imageType}`,
         { withCredentials: true }
       )
       .then(response => {
@@ -173,8 +174,7 @@ export default class PortfolioForm extends Component {
           banner_image: "",
           logo: "",
           editMode: false,
-          apiUrl:
-            "https://rebeccanakamura.devcamp.space/portfolio/portfolio_items",
+          apiUrl: "https://rebeccanakamura.devcamp.space/portfolio/portfolio_items",
           apiAction: "post"
         });
 
